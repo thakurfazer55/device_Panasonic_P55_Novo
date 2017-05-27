@@ -212,4 +212,3 @@ index dc790d798..07b36c362 100644
          int filteredType = RadioAccessFamily.getNetworkTypeFromRaf(filteredRaf);
  
          // The getNetworkTypeFromRaf, has no way to differentiate between MODE_GSM_UMTS
-z
