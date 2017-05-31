@@ -1,8 +1,8 @@
 # inherit from the proprietary version
--include vendor/Xiaomi/hm_note_1w/BoardConfigVendor.mk
+-include vendor/Panasonic/P55_Novo/BoardConfigVendor.mk
 
 # GPS
-TARGET_SPECIFIC_HEADER_PATH := device/Xiaomi/hm_note_1w/include
+TARGET_SPECIFIC_HEADER_PATH := device/Panasonic/P55_Novo/include
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6592
@@ -36,9 +36,9 @@ BOARD_KERNEL_CMDLINE :=
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
 #TARGET_KERNEL_CONFIG := 2014011_debug_defconfig
-#TARGET_KERNEL_SOURCE := Xiaomi/hm_note_1w\
-TARGET_PREBUILT_KERNEL := device/Xiaomi/hm_note_1w/kernel
-BOARD_CUSTOM_BOOTIMG_MK := device/Xiaomi/hm_note_1w/bootimg.mk
+#TARGET_KERNEL_SOURCE := Panasonic/P55_Novo\
+TARGET_PREBUILT_KERNEL := device/Panasonic/P55_Novo/kernel
+BOARD_CUSTOM_BOOTIMG_MK := device/Panasonic/P55_Novo/bootimg.mk
 BOARD_CUSTOM_BOOTIMG := true
 TARGET_KMODULES := true
 
@@ -52,7 +52,7 @@ TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
 TARGET_CPU_MEMCPY_OPT_DISABLE := true
 
 # EGL
-BOARD_EGL_CFG := device/Xiaomi/hm_note_1w/configs/egl.cfg
+BOARD_EGL_CFG := device/Panasonic/P55_Novo/configs/egl.cfg
 USE_OPENGL_RENDERER := true
 BOARD_EGL_WORKAROUND_BUG_10194508 := true
 BOARD_EGL_NEEDS_HANDLE_VALUE := true
@@ -70,7 +70,7 @@ BLOCK_BASED_OTA :=false
 BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/BOOT/BOOT/boot/boot_mode
 
 # RIL
-BOARD_RIL_CLASS := ../../../device/Xiaomi/hm_note_1w/ril/
+BOARD_RIL_CLASS := ../../../device/Panasonic/P55_Novo/ril/
 
 BOARD_CONNECTIVITY_VENDOR := MediaTek
 BOARD_CONNECTIVITY_MODULE := conn_soc
@@ -90,13 +90,13 @@ WIFI_DRIVER_FW_PATH_P2P:=P2P
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_MTK := true
 BOARD_BLUETOOTH_DOES_NOT_USE_RFKILL := true
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/Xiaomi/hm_note_1w/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/Panasonic/P55_Novo/bluetooth
 
 # Sensors
 TARGET_NO_SENSOR_PERMISSION_CHECK := true
 
 # CWM
-TARGET_RECOVERY_FSTAB := device/Xiaomi/hm_note_1w/rootdir/recovery.fstab
+TARGET_RECOVERY_FSTAB := device/Panasonic/P55_Novo/rootdir/recovery.fstab
 BOARD_HAS_NO_SELECT_BUTTON := true
 
 # TWRP
