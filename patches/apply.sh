@@ -27,7 +27,6 @@
  cd ..
  cd opt/te*/
  patch -p1 < ../../../device/Xiaomi/hm_note_1w/patches/telephony.patch
- patch -p1 < ../../../device/Xiaomi/hm_note_1w/patches/telephony2.patch
  cd ../../..
  cd exte*/sepolicy
  patch -p1 < ../../device/Xiaomi/hm_note_1w/patches/sepolicy.patch
