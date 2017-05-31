@@ -178,3 +178,37 @@ index 1ac262b..e8583a3 100644
 -                mIccId = IccUtils.bcdToString(data, 0, data.length);
  
                  log("iccid: " + mIccId);
+
+From 880b07f5abc0957d8de9839416ce99375e9b1187 Mon Sep 17 00:00:00 2001
+From: LineageOS-MTK <luzejij@binka.me>
+Date: Mon, 22 May 2017 23:10:22 +0300
+Subject: [PATCH] Fix 2g/3g switch
+
+---
+ src/java/com/android/internal/telephony/PhoneBase.java | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/src/java/com/android/internal/telephony/PhoneBase.java b/src/java/com/android/internal/telephony/PhoneBase.java
+index dc790d798..07b36c362 100644
+--- a/src/java/com/android/internal/telephony/PhoneBase.java
++++ b/src/java/com/android/internal/telephony/PhoneBase.java
+@@ -1750,7 +1750,7 @@ public void setPreferredNetworkType(int networkType, Message response) {
+         // Only set preferred network types to that which the modem supports
+         int modemRaf = getRadioAccessFamily();
+         int rafFromType = RadioAccessFamily.getRafFromNetworkType(networkType);
+-
++/*
+         if (modemRaf == RadioAccessFamily.RAF_UNKNOWN
+                 || rafFromType == RadioAccessFamily.RAF_UNKNOWN) {
+             Rlog.d(LOG_TAG, "setPreferredNetworkType: Abort, unknown RAF: "
+@@ -1764,8 +1764,8 @@ public void setPreferredNetworkType(int networkType, Message response) {
+             }
+             return;
+         }
+-
+-        int filteredRaf = (rafFromType & modemRaf);
++*/
++        int filteredRaf = (rafFromType);
+         int filteredType = RadioAccessFamily.getNetworkTypeFromRaf(filteredRaf);
+ 
+         // The getNetworkTypeFromRaf, has no way to differentiate between MODE_GSM_UMTS
