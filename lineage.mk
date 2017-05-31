@@ -7,7 +7,7 @@ PRODUCT_RELEASE_NAME := P55_Novo
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/Xiaomi/hm_note_1w/device_hm_note_1w.mk)
+$(call inherit-product, device/Panasonic/P55_Novo/device_P55_Novo.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := P55_Novo
