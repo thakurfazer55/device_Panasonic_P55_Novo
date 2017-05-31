@@ -1,5 +1,5 @@
 #
-# system.prop for Xiaomi hm_note_1w
+# system.prop for Panasonic P55_Novo
 #
 
 rild.libpath=/system/lib/mtk-ril.so
@@ -23,7 +23,7 @@ mediatek.wlan.ctia=0
 #
 wifi.tethering.interface=ap0
 #
-ro.sf.lcd_density=320
+ro.sf.lcd_density=270
 ro.opengles.version=131072
 
 ro.nfc.port=I2C
