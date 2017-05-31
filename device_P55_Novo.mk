@@ -4,11 +4,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
-$(call inherit-product-if-exists, vendor/Xiaomi/hm_note_1w/hm_note_1w-vendor.mk)
+$(call inherit-product-if-exists, vendor/Panasonic/P55_Novo/P55_Novo-vendor.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/Xiaomi/hm_note_1w/overlay
+DEVICE_PACKAGE_OVERLAYS += device/Panasonic/P55_Novo/overlay
 
-LOCAL_PATH := device/Xiaomi/hm_note_1w
+LOCAL_PATH := device/Panasonic/P55_Novo
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := $(LOCAL_PATH)/kernel
 else
@@ -159,8 +159,8 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, build/target/product/full.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
-PRODUCT_NAME := full_hm_note_1w
-PRODUCT_DEVICE := hm_note_1w
+PRODUCT_NAME := full_P55_Novo
+PRODUCT_DEVICE := P55_Novo
 
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
