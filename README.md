@@ -1,4 +1,4 @@
-This is a Device tree for Redmi Note 3G (MT6592) which is based on MT6592 SoC.
+This is a Device tree for Panasonic P55 Novo (MT6592) which is based on MT6592 SoC.
 Based on Stock Kitkat kernel (3.4.67)
 
 
@@ -6,7 +6,7 @@ Based on Stock Kitkat kernel (3.4.67)
    * CPU	Octa-core 1.4/1.7 GHz Cortex-A7 
    * Memory	2GB RAM
    * Android Version 4.4.2 
-   * Storage	8GB
+   * Storage	16GB
    * Battery	3150 mAh
    * Display	5.5" 720 x 1280 DPI 320
    * Rear Camera	13MP
@@ -35,13 +35,13 @@ Based on Stock Kitkat kernel (3.4.67)
 
   * repo init -u git://github.com/LineageOS/android.git -b cm-13.0
   * repo sync
-  * git clone https://github.com/EndLess728/android_device_hm_note_1w.git -b master device/Xiaomi/hm_note_1w
-  * git clone https://github.com/EndLess728/android_vendor_hm_note_1w.git -b master vendor/Xiaomi/hm_note_1w
+  * git clone https://github.com/brownietheboy/android_device_P55_Novo.git -b master device/Panasonic/P55_Novo
+  * git clone https://github.com/brownietheboy/android_vendor_P55_Novo.git -b master device/Panasonic/P55_Novo
   * cd device/Xiaomi/hm_note_1w/patches
   * . apply.sh 
   * source build/envsetup.sh
-  * breakfast hm_note_1w
-  * brunch hm_note_1w
+  * breakfast P55_Novo
+  * brunch P55_Novo
   * Done :)
   
   # Credits/Thanks to:-
@@ -62,3 +62,4 @@ Based on Stock Kitkat kernel (3.4.67)
   * Tribetmen (2G/3G Switch and Reboot to turn On data Fix)
   * SamarV-121
   * EndLess
+  * Sartaj Prince
