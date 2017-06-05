@@ -37,7 +37,7 @@ Based on Stock Kitkat kernel (3.4.67)
   * repo sync
   * git clone https://github.com/brownietheboy/android_device_P55_Novo.git -b master device/Panasonic/P55_Novo
   * git clone https://github.com/brownietheboy/android_vendor_P55_Novo.git -b master device/Panasonic/P55_Novo
-  * cd device/Xiaomi/hm_note_1w/patches
+  * cd device/Panasonic/P55_Novo/patches
   * . apply.sh 
   * source build/envsetup.sh
   * breakfast P55_Novo
