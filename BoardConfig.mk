@@ -1,6 +1,5 @@
 # inherit from the proprietary version
 -include vendor/Panasonic/P55_Novo/BoardConfigVendor.mk
-
 # GPS
 TARGET_SPECIFIC_HEADER_PATH := device/Panasonic/P55_Novo/include
 
@@ -131,5 +130,3 @@ $(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
 # Remove Stock FMRadio by Default.
 $(shell rm -rf $(LOCAL_PATH)/packages/apps/FMRadio)
 
-# Use old sepolicy version
-POLICYVERS := 26

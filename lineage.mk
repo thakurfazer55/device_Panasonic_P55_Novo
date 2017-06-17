@@ -5,7 +5,7 @@ PRODUCT_RELEASE_NAME := P55_Novo
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
-
+BOARD_HAVE_QCOM_FM := true
 # Inherit device configuration
 $(call inherit-product, device/Panasonic/P55_Novo/device_P55_Novo.mk)
 
